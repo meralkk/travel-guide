@@ -1,3 +1,13 @@
+.container h2{
+    padding-right: 50px;
+}
+
+.brand {
+    color: tomato;
+    font-weight: 500;
+
+}
+
 .navbar{
     padding: 20px 0px;
     display: flex;
