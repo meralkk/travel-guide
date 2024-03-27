@@ -2,9 +2,19 @@
     padding-right: 50px;
 }
 
-.brand {
-    color: tomato;
-    font-weight: 500;
+
+
+.travel {
+    font-size: max(4vw, 20px);
+    color:#000000;
+    font-weight: 700;
+}
+
+.guide{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: max(5vw, 20px);
 
 }
 
@@ -36,10 +46,10 @@
 .navbar button{
     background-color: transparent;
     font-size: 16px;
-    color: #49557e;
-    border: 1px solid tomato;
-    padding: 10px 30px;
-    border-radius: 50px;
+    /* color: #49557e;
+    border: 1px solid tomato; */
+    /* padding: 10px 30px; */
+    /* border-radius: 50px; */
     cursor: pointer;
     transition: 0.3s;
 }
@@ -61,58 +71,4 @@
     position: relative;
 }
 
-.navbar-search-icon .dot{
-    position: absolute;
-    min-width: 10px;
-    min-height: 10px;
-    background-color: tomato;
-    border-radius: 5px;
-    top: -8px;
-    right: -8px;
-}
 
-@media (max-width: 1050px) {
-    .navbar .logo{
-        width: 140px;
-    }
-    .navbar-menu{
-        gap: 20px;
-        font-size: 17px;
-    }
-    .navbar-right{
-        gap: 30px;
-    }
-    .navbar-right img{
-        width: 22px;
-    }
-    .navbar-right button{
-        padding: 8px 25px;
-    }
-}
-
-@media (max-width: 900px) {
-    .navbar .logo{
-        width: 120px;
-    }
-    .navbar-menu{
-        gap: 15px;
-        font-size: 16px;
-    }
-    .navbar-right{
-        gap: 20px;
-    }
-    .navbar-right img{
-        width: 20px;
-    }
-    .navbar-right button{
-        padding: 7px 20px;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 750px) {
-    .navbar-menu{
-        display: none;
-    }
-
-}

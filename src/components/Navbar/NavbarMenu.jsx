@@ -11,7 +11,7 @@ function NavScrollExample() {
   return (
     <Navbar expand="lg">
       <Container fluid className='container'>
-        <Navbar.Brand className='brand' href="#"><h2>Travel Guide</h2></Navbar.Brand>
+        <Navbar.Brand className='brand' href="#"><span className='travel'>TRAVEL</span> <span className='guide'>guide</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -30,16 +30,6 @@ function NavScrollExample() {
             <Nav.Link href="#about-me">About me</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-              
-            />
-            
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
