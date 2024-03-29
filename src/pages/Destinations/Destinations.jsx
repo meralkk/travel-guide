@@ -1,24 +1,23 @@
 import React from 'react'
 import './Destinations.css'
 import germany from '../../assets/germany/germany.jpg'
+import { Link } from 'react-router-dom'
 
 const Destinations = () => {
   return (
-    <div className='destinations-container'>
+    <div className='destinations'>
      
         <img src={germany} alt="" />
     
       <div className="title">
         <ul className='country'>
-          <li>Dresden,&nbsp;</li>
-          <li>Berlin,&nbsp;</li>
-          <li>Hamburg,&nbsp;</li>
-          <li>Praha,&nbsp;</li>
-          <li>Batumi,&nbsp;</li>
-          <li>Athens,&nbsp;</li>
-          <li>Antalya,&nbsp;</li>
-          <li>Istanbul&nbsp;</li>
-
+           <li> <Link to="/destinations/dresden">Dresden,   &nbsp;      </Link></li>
+           <li> <Link to="/destinations/berlin">Berlin,    &nbsp;         </Link></li>
+           <li> <Link to="/destinations/hamburg">Hamburg,   &nbsp;          </Link></li>
+           <li> <Link to="/destinations/praha">Praha,      &nbsp;       </Link></li>
+           <li> <Link to="/destinations/athens">Athens,     &nbsp;        </Link></li>
+           <li> <Link to="/destinations/antalya">Antalya,    &nbsp;         </Link></li>
+           <li> <Link to="/destinations/istanbul">Istanbul   &nbsp;          </Link></li>
 
         </ul>
       </div>

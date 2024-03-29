@@ -1,60 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Charm:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif+JP&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Charm:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif+JP&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-.destinations-container{
-    display: flex;
-    flex-direction: row;
-
+.destinations {
+  display: flex;
+  flex-direction: row;
 }
 
-img{
-    width: 15%;
-    margin-right: 200px;
+.destinations a {
+  font-family: "Mulish", sans-serif;
+  font-size: 74px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-@media (min-width: 1800px){
-    img {
-        margin-right: 300px;
-    }
-}
-.title{
-    color: #cacaca;
-    
-
+img {
+  width: 15%;
+  margin-right: 200px;
 }
 
-.title ul{
-    display: flex;
-    align-items:flex-end;
-    /* gap: 20px; */
-    flex-wrap: wrap;
-
+@media (min-width: 1800px) {
+  img {
+    margin-right: 300px;
+  }
+}
+.title {
+  color: #cacaca;
 }
 
-.title ul li{
-    font-family: "Mulish", sans-serif;
-    font-size: 74px;
-    font-weight: 500;
-    cursor: pointer;
-
+.title ul {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .title ul li:hover {
-    color: black; 
-    transition: color 0.5s ease-in-out;
+  color: black;
+  transition: color 0.5s ease-in-out;
+}
+
+.title .country li:first-child {
+  color: black;
 }
 
 
-
-  
-
-.city{
-    color: #d8d8d8;
-    font-size: 70px;
-    flex-wrap: wrap;
-
-}
-
-.city ul li{
-    flex-wrap: wrap;
-}
