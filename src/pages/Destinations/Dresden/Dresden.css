@@ -38,4 +38,9 @@
   padding: 20px;
 }
 
+.lr{
+    display: flex;
+    justify-content: space-around;
+}
+
 
