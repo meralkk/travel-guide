@@ -3,7 +3,7 @@ import "./Dresden.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import dresden from "./dresden.jpg";
+import dresden from "./dresden.png";
 
 const Dresden = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -38,21 +38,26 @@ const Dresden = () => {
           </Col>
         </Row>
       </Container>
-
       <div className="parallax-container">
-        <div
-          className="parallax"
-          style={{ backgroundImage: `url(${dresden})` }}
-        ></div>
-      </div>
+  <div
+    className="parallax"
+    style={{ backgroundImage: `url(${dresden})` }}
+  ></div>
+  <figcaption className="photo-credit">Photo by RDK</figcaption>
+</div>
+
      
       <Container fluid className="content-container">
       <Row>
-        <Col>1 of 3</Col>
-        <Col xs={6}>2 of 3 (wider)</Col>
-        <Col>3 of 3</Col>
+        <Col className="title-container">[WHY DRESDEN?]</Col>
+        <Col className="description-container" xs={7}>Dresden, renowned for its <span> baroque architecture, </span>cultural heritage, and picturesque setting along <span> the Elbe River,</span> offers a captivating blend of history, <span> art, </span>and natural beauty.</Col>
+        <Col></Col>
       </Row>
       </Container>
+
+<p className="subtitle">Sightseeing <span className="subtitle-span">spots</span></p>
+
+
     </>
   );
 };
