@@ -2,7 +2,9 @@
 
 .destinations {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+
 }
 
 .destinations a {
@@ -12,14 +14,16 @@
   cursor: pointer;
 }
 
-img {
-  width: 15%;
-  margin-right: 200px;
+.image img {
+  width: 50%;
+  margin-left: 140px;
+
 }
 
 @media (min-width: 1800px) {
   img {
     margin-right: 300px;
+    
   }
 }
 .title {

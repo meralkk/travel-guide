@@ -2,14 +2,19 @@ import React from 'react'
 import './Destinations.css'
 import germany from '../../assets/germany/germany.jpg'
 import { Link } from 'react-router-dom'
+import { Container, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const Destinations = () => {
   return (
-    <div className='destinations'>
+    <Container fluid className='destinations'>
      
+     <Row>
+      <Col className='image' sm={4}>
         <img src={germany} alt="" />
-    
-      <div className="title">
+        </Col>
+      <Col sm={8} className="title">
         <ul className='country'>
            <li> <Link to="/destinations/dresden">Dresden,   &nbsp;      </Link></li>
            <li> <Link to="/destinations/berlin">Berlin,    &nbsp;         </Link></li>
@@ -20,8 +25,9 @@ const Destinations = () => {
            <li> <Link to="/destinations/istanbul">Istanbul   &nbsp;          </Link></li>
 
         </ul>
-      </div>
-    </div>
+      </Col>
+      </Row>
+    </Container>
   )
 }
 
