@@ -16,7 +16,7 @@ const Destinations = () => {
         </Col>
       <Col sm={8} className="title">
         <ul className='country'>
-           <li> <Link to="/destinations/dresden">Dresden,   &nbsp;      </Link></li>
+           <li> <Link to="/destinations/germany/dresden">Dresden,   &nbsp;      </Link></li>
            <li> <Link to="/destinations/berlin">Berlin,    &nbsp;         </Link></li>
            <li> <Link to="/destinations/hamburg">Hamburg,   &nbsp;          </Link></li>
            <li> <Link to="/destinations/praha">Praha,      &nbsp;       </Link></li>
