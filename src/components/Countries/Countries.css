@@ -3,3 +3,18 @@
   transition: color 0.5s ease-in-out;
 }
 
+.cities-image{
+  width: 70%;
+}
+
+.cities{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start; 
+  overflow-x: auto;  
+}
+
+.cities::-webkit-scrollbar {
+  display: none; 
+}

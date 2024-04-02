@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", "Crimson Text", cursive;
+  font-family: "Roboto", "Crimson Text";
   scroll-behavior: smooth; 
   text-decoration: none;
   list-style: none;
@@ -13,6 +13,16 @@
 
 body{
   min-height: 100vh;
+  overflow-x: hidden; 
+}
+
+html {
+  overflow-x: hidden; 
+}
+
+h2{
+  font-family: "Crimson Text";
+
 }
 
 a{
